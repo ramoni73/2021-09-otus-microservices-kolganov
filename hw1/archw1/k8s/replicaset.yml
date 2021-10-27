@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: archw1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: archw1
+  template:
+    metadata:
+      labels:
+        app: archw1
+    spec:
+      containers:
+        - name: archw1
+          image: ramoni73/microservices-2021-09:v1
+          ports:
+            - containerPort: 80
