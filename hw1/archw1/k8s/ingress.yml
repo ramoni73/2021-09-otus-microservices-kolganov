@@ -9,10 +9,10 @@ spec:
     - host: arch.homework
       http:
         paths:
-          - path: /archw1
+          - path: /myapp($|/)(.*)
             pathType: Prefix
             backend:
               service:
-                name: archw1
+                name: archw1-service
                 port:
                   number: 8000
