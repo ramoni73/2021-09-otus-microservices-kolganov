@@ -17,4 +17,4 @@ spec:
           image: ramoni73/microservices-2021-09:v1
           ports:
             - name: web
-              containerPort: 80
+              containerPort: 8000
